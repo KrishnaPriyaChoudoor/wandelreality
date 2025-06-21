@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wandel Reality</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-beige text-brown font-sans scroll-smooth">
+    <!-- Header -->
+    <header class="sticky top-0 bg-brown text-beige p-4 shadow-md z-50">
+      <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <h1 class="text-xl sm:text-2xl font-bold">Wandel Reality</h1>
+
+        <!-- Hamburger Button (visible on small screens) -->
+        <button id="menuToggle" class="md:hidden text-beige focus:outline-none">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6 text-beige"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+
+        <!-- Desktop Nav -->
+        <nav class="hidden md:flex space-x-4 sm:space-x-6 text-sm sm:text-base">
+          <a href="#home" class="hover:text-olive transition">Home</a>
+          <a href="#atelier" class="hover:text-olive transition">Atelier</a>
+          <a href="#events" class="hover:text-olive transition">Events</a>
+          <a href="#slots" class="hover:text-olive transition">Slots</a>
+          <a href="#team" class="hover:text-olive transition">Team</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Nav Menu (toggle this) -->
+      <div
+        id="mobileMenu"
+        class="md:hidden hidden flex-col bg-brown text-beige px-4 pt-4 pb-2 space-y-2 transition-all duration-300 ease-in-out"
+      >
+        <a href="#home" class="block hover:text-olive transition">Home</a>
+        <a href="#atelier" class="block hover:text-olive transition">Atelier</a>
+        <a href="#events" class="block hover:text-olive transition">Events</a>
+        <a href="#slots" class="block hover:text-olive transition">Slots</a>
+        <a href="#team" class="block hover:text-olive transition">Team</a>
+      </div>
+    </header>
+
+    <!-- Home Section -->
+    <section
+      id="home"
+      class="min-h-[auto] flex flex-col md:flex-row justify-center items-center text-center md:text-left px-4 sm:px-8 py-8 gap-8"
+    >
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img
+          src="/assets/trex.png"
+          alt="Cute T-Rex"
+          class="w-[80%] max-w-xs sm:max-w-sm md:max-w-full object-contain drop-shadow-xl"
+        />
+      </div>
+      <div class="w-full md:w-1/2">
+        <h2 class="text-3xl sm:text-5xl italic font-bold mb-4 text-forest">
+          Welcome to Wandel Reality!
+        </h2>
+        <p
+          class="text-base sm:text-xl mb-4 max-w-xl mx-auto md:mx-0 text-justify"
+        >
+          An initiative by Geethanjali College of Engineering and Technology —
+          exploring the future of reality, one immersive experience at a time.
+        </p>
+        <p class="text-base sm:text-xl max-w-xl mx-auto md:mx-0 text-justify">
+          As GCET’s official XR lab, Wandel Reality is dedicated to the
+          research, design, and development of virtual, augmented, and mixed
+          reality technologies — with a focus on immersive storytelling,
+          interactive experiences, and game design and development.
+        </p>
+      </div>
+    </section>
+
+    <!-- Atelier Section -->
+    <section
+      id="atelier"
+      class="min-h-[auto] flex flex-col justify-center items-center bg-olive text-beige text-center px-4 sm:px-8 py-16"
+    >
+      <h2 class="text-3xl sm:text-4xl font-bold mb-4">
+        Atelier: Projects & Research
+      </h2>
+      <p class="text-base sm:text-lg max-w-2xl mb-8">
+        Explore our latest explorations in VR, AR, and mixed realities that
+        blend art, science, and engineering.
+      </p>
+
+      <!-- Realish Diwali -->
+      <div
+        class="flex flex-col md:flex-row gap-6 items-center mb-12 w-full max-w-5xl"
+      >
+        <div class="flex-shrink-0 flex flex-col items-center">
+          <img
+            src="/assets/RDCover.jpg"
+            alt="Realish Diwali"
+            class="rounded-xl shadow-lg object-cover w-full max-w-xs sm:h-60 md:w-[350px] md:h-[240px]"
+          />
+          <p class="text-xs mt-2 italic">Image Source: AI generated</p>
+        </div>
+        <div class="flex-1 text-left items-center">
+          <h3 class="text-2xl font-bold mb-2">Realish Diwali</h3>
+          <p class="text-sm sm:text-md leading-relaxed text-justify">
+            <em>Realish Diwali</em> is an ongoing research project that
+            reimagines traditional Diwali celebrations through a multiplayer
+            virtual reality experience. Focused on sustainability and cultural
+            preservation, the experience blends magical realism with
+            environmental messaging to simulate firecracker bursting — minus the
+            pollution. This project also explores the adoption of digital
+            rituals and aims to understand how immersive storytelling and
+            gamification can drive behavioral change. The project is designed
+            both as a pedagogical tool and a research study at the intersection
+            of XR, culture, and sustainability.
+          </p>
+        </div>
+      </div>
+
+      <!-- The Silence That Remains -->
+      <div
+        class="flex flex-col md:flex-row gap-6 items-center mb-12 w-full max-w-5xl"
+      >
+        <div class="flex-shrink-0 flex flex-col items-center">
+          <img
+            src="/assets/TSTRCover.jpg"
+            alt="The Silence that Remains"
+            class="rounded-xl shadow-lg object-cover w-full max-w-xs sm:h-60 md:w-[350px] md:h-[240px]"
+          />
+          <p class="text-xs mt-2 italic">Image Source: Internet</p>
+        </div>
+        <div class="flex-1 text-left items-center">
+          <h3 class="text-2xl font-bold mb-2">The Silence that Remains</h3>
+          <p class="text-sm sm:text-md leading-relaxed text-justify">
+            <em>The Silence that Remains</em> is an immersive XR art concept in
+            progress, being developed for submission to India HCI. The project
+            was sparked by the evocative composition
+            <span class="font-semibold text-beige"
+              >"The Silence that Remains – Mokshamu Galada"</span
+            >
+            by Indian Carnatic Progressive Rock band
+            <span class="font-semibold text-beige">Agam</span>, and draws
+            artistic inspiration from the revolutionary
+            <span class="font-semibold text-beige">volumism</span> style
+            pioneered by VR artist
+            <span class="font-semibold text-beige">Anna Zhilyaeva</span>. At its
+            core, the piece reflects on themes of climate change, loss, and
+            inner stillness. More will be shared once the work is ready for
+            public showcase.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section
+      id="events"
+      class="py-16 bg-beige text-brown text-center px-4 sm:px-8"
+    >
+      <h2 class="text-3xl sm:text-4xl font-bold mb-8">Upcoming Events</h2>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center"
+      >
+        <div class="flex justify-center w-full col-span-full">
+          <div
+            class="border border-olive rounded-2xl p-6 shadow-md hover:shadow-lg transition bg-beige/20 text-left w-full max-w-md"
+          >
+            <h3 class="text-xl font-semibold mb-2 text-brown">
+              VR Lab Inauguration
+            </h3>
+            <p class="text-sm text-olive font-medium mb-2">
+              June 28, 2025 · 10:00 AM
+            </p>
+            <p class="text-sm sm:text-base mb-4">
+              Discover our vision, meet the team, and explore how we plan to
+              shape the future of immersive technology on campus.
+            </p>
+            <p class="text-olive font-semibold">Venue : Cellar, Block 5</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Book Slot Section -->
+    <section
+      id="slots"
+      class="min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-8 py-16 bg-olive text-beige"
+    >
+      <h2 class="text-3xl font-bold mb-4">Book a Slot!</h2>
+      <p class="text-base sm:text-lg mb-8">
+        Choose your preferred session to collaborate, code, or seek guidance at
+        Wandel Reality Lab.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+        <!-- Cards -->
+        <a
+          href="https://calendly.com/krishnapriyachoudoor-95/code-review"
+          target="_blank"
+          class="block border border-beige bg-olive/80 rounded-2xl p-6 hover:bg-beige hover:text-olive transition text-left"
+        >
+          <h3 class="text-lg font-semibold mb-2">Code Review</h3>
+          <p class="text-sm">
+            Realish Diwali contributors must book a code review before merging
+            features.
+          </p>
+        </a>
+        <a
+          href="https://calendly.com/krishnapriyachoudoor-95/mentored-programming"
+          target="_blank"
+          class="block border border-beige bg-olive/80 rounded-2xl p-6 hover:bg-beige hover:text-olive transition text-left"
+        >
+          <h3 class="text-lg font-semibold mb-2">Mentored Programming</h3>
+          <p class="text-sm">
+            Get guidance and hands-on mentoring as you build features for our XR
+            projects.
+          </p>
+        </a>
+        <a
+          href="https://calendly.com/krishnapriyachoudoor-95/diy-programming"
+          target="_blank"
+          class="block border border-beige bg-olive/80 rounded-2xl p-6 hover:bg-beige hover:text-olive transition text-left"
+        >
+          <h3 class="text-lg font-semibold mb-2">DIY Programming</h3>
+          <p class="text-sm">
+            Reserve a solo lab slot to tinker, build, or test immersive
+            experiences independently.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section
+      id="team"
+      class="py-16 flex flex-col items-center bg-beige text-brown text-center px-4 sm:px-8"
+    >
+      <h2 class="text-4xl font-bold mb-4 transition-transform duration-700">
+        Wandel Reality Group
+      </h2>
+      <p class="text-lg max-w-2xl mb-4 transition-transform duration-700">
+        Meet the core team behind Wandel Reality Lab — a collective of
+        researchers, mentors, and institutional leaders driving immersive
+        innovation at GCET.
+      </p>
+
+      <!-- Top Row: Chairman and Vice-Chairman -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8 max-w-4xl mx-auto">
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/assets/c.JPG"
+            alt="Chairman"
+            class="rounded-full w-32 h-32 mb-4 object-cover border-4 border-olive shadow-md"
+          />
+          <p class="font-semibold">Dr. G.R. Ravinder Reddy</p>
+          <p class="text-sm">Chairman</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/assets/vc.JPG"
+            alt="Vice-Chairman"
+            class="rounded-full w-32 h-32 mb-4 object-cover border-4 border-olive shadow-md"
+          />
+          <p class="font-semibold">R. Harish Chandra Reddy</p>
+          <p class="text-sm">Vice-Chairman</p>
+        </div>
+      </div>
+
+      <!-- Second Row: Director and Principal -->
+      <div
+        class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-16 max-w-4xl mx-auto"
+      >
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/assets/director.JPG"
+            alt="Director"
+            class="rounded-full w-32 h-32 mb-4 object-cover border-4 border-olive shadow-md"
+          />
+          <p class="font-semibold">Dr. Udaya Kumar Susarla</p>
+          <p class="text-sm">Director</p>
+        </div>
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/assets/principal.jpg"
+            alt="Principal"
+            class="rounded-full w-32 h-32 mb-4 object-cover border-4 border-olive shadow-md"
+          />
+          <p class="font-semibold">Dr. K. Sagar</p>
+          <p class="text-sm">Principal</p>
+        </div>
+      </div>
+
+      <!-- Bottom Row: Dean, HOD, and Lead -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/assets/Dean.jpeg"
+            alt="Dean CSI"
+            class="rounded-full w-32 h-32 mb-4 object-cover border-4 border-olive shadow-md"
+          />
+          <p class="font-semibold">Dr. V. Madhusudan Rao</p>
+          <p class="text-sm">Dean, SCSI</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/assets/hod.jpeg"
+            alt="HOD DS"
+            class="rounded-full w-32 h-32 mb-4 object-cover border-4 border-olive shadow-md"
+          />
+          <p class="font-semibold">Dr. B. Srinivas Rao</p>
+          <p class="text-sm">HOD, CSE-DS</p>
+        </div>
+
+        <div class="flex flex-col items-center text-center">
+          <img
+            src="/assets/kps.jpg"
+            alt="Lead Researcher"
+            class="rounded-full w-32 h-32 mb-4 object-cover border-4 border-olive shadow-md"
+          />
+          <p class="font-semibold">Krishna Priya Choudoor</p>
+          <p class="text-sm">Lead Researcher & Asst. Professor</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional Footer -->
+    <footer class="bg-brown text-beige p-4 text-center">
+      &copy; 2025 Wandel Reality — XR Lab @ Geethanjali College of Engineering
+      and Technology. All rights reserved.
+    </footer>
+
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>
