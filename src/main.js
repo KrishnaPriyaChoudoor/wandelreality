@@ -1,4 +1,4 @@
-import "./style.css";
+/*import "./style.css";*/ // uncommment for vite mode
 
 document.addEventListener("DOMContentLoaded", () => {
   const menuToggle = document.getElementById("menuToggle");
